@@ -31,7 +31,7 @@ app.listen(port, (err) => {
     // sendQuestion();
     var d = new Date();
     // console.log(d.getHours() + "     " + (d.getHours() % 12));
-    dd.getHours() === 12 || dd.getHours() === 0 ? sendQuestion() : -1;
+    d.getHours() === 12 || d.getHours() === 0 ? sendQuestion() : -1;
   }, 1000 * 60 * 60);
 });
 
